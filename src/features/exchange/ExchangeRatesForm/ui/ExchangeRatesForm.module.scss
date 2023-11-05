@@ -1,0 +1,17 @@
+@import '~/src/app/styles/breakpoints';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+
+  max-width: 250px;
+
+  @media only screen and (width >= $breakpoint-tablet) {
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-end;
+    max-width: 350px;
+  }
+}

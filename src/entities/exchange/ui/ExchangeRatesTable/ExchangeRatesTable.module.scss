@@ -1,0 +1,56 @@
+.table {
+  border-spacing: 0;
+}
+
+.head-cell {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+
+  padding: 8px;
+
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+
+  &:first-child {
+    border-left: 1px solid var(--color-black);
+  }
+}
+
+.cell {
+  padding: 8px;
+  border-right: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+
+  &:first-child {
+    border-left: 1px solid var(--color-black);
+  }
+}
+
+.with-button {
+  padding: 0;
+}
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  padding: 8px;
+}
+
+.icon {
+  &::after {
+    content: '';
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+.ascending::after {
+  content: '\25BC';
+}
+
+.descending::after {
+  content: '\25B2';
+}

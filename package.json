@@ -1,0 +1,78 @@
+{
+  "name": "fin",
+  "version": "1.0.0",
+  "repository": "https://github.com/sanarovsashqa/fin.git",
+  "author": "Alexander Sanarov <alex.sanarov@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "start": "webpack serve --env port=3000",
+    "build:prod": "webpack --env mode=production",
+    "build:dev": "webpack --env mode=development",
+    "ts": "tsc --noEmit",
+    "lint:es": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:es:fix": "npm run lint:es -- --fix",
+    "lint:scss": "stylelint src/",
+    "lint:scss:fix": "lint:scss -- --fix"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "dayjs": "^1.11.7",
+    "lodash.debounce": "^4.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-input-mask": "^3.0.0-alpha.2",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "@types/dotenv-webpack": "^7.0.3",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@types/react-input-mask": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "classnames": "^2.3.2",
+    "css-loader": "^6.7.3",
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "html-webpack-plugin": "^5.5.1",
+    "husky": "^8.0.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "stylelint": "^15.6.1",
+    "stylelint-config-clean-order": "^5.0.1",
+    "stylelint-config-css-modules": "^4.2.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-prettier": "^3.0.0",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "lint-staged": {
+    "*.(ts|tsx|js|jsx)": [
+      "yarn lint:es"
+    ],
+    "*.(css|scss|sass)": [
+      "yarn lint:scss"
+    ]
+  }
+}

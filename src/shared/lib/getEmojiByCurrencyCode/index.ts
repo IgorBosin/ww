@@ -1,0 +1,1 @@
+export { getEmojiByCurrencyCode } from './getEmojiByCurrencyCode';

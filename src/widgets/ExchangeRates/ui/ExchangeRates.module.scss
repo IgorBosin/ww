@@ -1,0 +1,32 @@
+.card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-wrapper {
+  margin-bottom: 16px;
+}
+
+.table-wrapper {
+  scrollbar-width: none;
+
+  position: relative;
+
+  overflow: auto;
+  flex-grow: 1;
+
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

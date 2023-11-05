@@ -1,0 +1,15 @@
+.link {
+  padding: 4px;
+  color: var(--link-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--link-color-hover);
+  }
+
+  &:global.active {
+    cursor: default;
+    color: var(--link-color-active);
+  }
+}

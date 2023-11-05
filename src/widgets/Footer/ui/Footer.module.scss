@@ -1,0 +1,11 @@
+.wrapper {
+  background-color: var(--color-white);
+  box-shadow: 0 -0.5px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+}

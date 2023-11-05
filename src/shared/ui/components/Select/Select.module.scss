@@ -1,0 +1,28 @@
+.select {
+  display: inline-flex;
+  align-items: center;
+
+  &::after {
+    pointer-events: none;
+    content: '\25BC';
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+.select select {
+  cursor: pointer;
+
+  color: var(--color-black);
+
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
